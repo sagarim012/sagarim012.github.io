@@ -1,0 +1,79 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    font-size: 2vw;
+}
+
+header{
+    padding: 16px;
+    background-color: paleturquoise;
+    color: white;
+    grid-area: header;
+    text-align: center;
+}
+
+#logo {
+    margin: 0px;
+    padding: 8px;
+    font-family: "Fredoka One", sans-serif;
+    width: 21%;
+    text-shadow:
+    1px 1px 0px black, /* Bottom-right shadow */
+    -1px 1px 0px black, /* Bottom-left shadow */
+    1px -1px 0px black, /* Top-right shadow */
+    -1px -1px 0px black; /* Top-left shadow */
+    text-align: center;
+    justify-content: space-around;
+}
+
+header > nav > ul{
+    list-style-type:none; 
+    padding: 0;
+    margin:0;
+    text-align: center;
+}
+
+body > main > main> section> article {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2 > p {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+footer {
+    padding: 16px;
+    background-color: paleturquoise;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    grid-area: footer;
+}
+
+footer> section > nav> ul> div{
+    list-style-type:none; 
+    padding: 0;
+    margin:0;
+    text-align: center;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "menu main"
+    "footer footer";
+    grid-template-columns: 1fr 6fr;
+}
